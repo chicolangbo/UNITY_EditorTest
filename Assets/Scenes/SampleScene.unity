@@ -156,7 +156,6 @@ MonoBehaviour:
   texture2D: {fileID: 2800000, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
   tileSize: {x: 16, y: 16}
   tileOffset: {x: 0, y: 0}
-  tilePadding: {x: 0, y: 0}
   sprites:
   - {fileID: 606403174, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
   - {fileID: -1960367432, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
@@ -174,8 +173,8 @@ MonoBehaviour:
   - {fileID: 1972398561, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
   - {fileID: -1936661742, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
   - {fileID: 739779543, guid: 962ac2b7d68074146adcf05cf17461fc, type: 3}
-  gridSize: {x: 0, y: 0}
-  pizelToUnits: 0
+  gridSize: {x: 320, y: 160}
+  pixelToUnits: 1
   tileId: 0
   tiles: {fileID: 0}
 --- !u!4 &100105503
