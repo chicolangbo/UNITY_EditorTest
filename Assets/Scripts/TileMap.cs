@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TileMap : MonoBehaviour
 {
+    public static int SelectedTileIndex { get; set; }
+
     public Vector2 mapSize = new Vector2(20, 10);
     public Texture2D texture2D; // 타일 전체 이미지
     public Vector2 tileSize; // 타일 하나의 사이즈
@@ -12,9 +14,6 @@ public class TileMap : MonoBehaviour
     public Sprite[] sprites; // slice된 타일 하나씩 배열로 추가
     public Vector2 gridSize; // 전체 사이즈
     public int pixelToUnits;
-
-    public int tileId; // sprites의 index
-    public GameObject tiles; // 게임오브젝트 부모 배치용
 
     private void OnDrawGizmosSelected()
     {
@@ -37,5 +36,10 @@ public class TileMap : MonoBehaviour
             var y = pos.y - tileSize.y * i;
             Gizmos.DrawLine(new Vector2(pos.x, y), new Vector2(pos.x + gridSize.x, y));
         }
+    }
+
+    public static string GetTileId(int r, int c)
+    {
+        return $"Tile (${r}, {c})";
     }
 }
